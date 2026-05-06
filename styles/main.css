@@ -1,0 +1,203 @@
+html, body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*overflow:hidden;
+    margin: 0;*/
+    scroll-behavior: smooth;
+}
+
+.jumbotron-custom {
+  background-image: url("../media/Webseite_Main_Jumbotron.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+}
+
+.navbar-custom {
+  background-image: url("../media/Custom_Navbar_Complete.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 8vw;
+  height: 16vw;
+  position: relative;
+}
+
+.navbar-ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+  margin: 0;
+  padding: 0;
+}
+
+
+.home{
+    position:absolute;
+
+    width:15%;
+    height:25%;
+
+    top:50%;
+    left:8%;
+
+    cursor:pointer;
+}
+
+.lebenslauf{
+    position:absolute;
+
+    width:22%;
+    height:25%;
+
+    top:50%;
+    left:27%;
+
+    cursor:pointer;
+}
+
+.zeugnis{
+    position:absolute;
+
+    width:18%;
+    height:25%;
+
+    top:50%;
+    left:52%;
+
+    cursor:pointer;
+}
+
+.projekte{
+    position:absolute;
+
+    width:18%;
+    height:25%;
+
+    top:50%;
+    left:73%;
+
+    cursor:pointer;
+}
+
+.wrapper{
+    position: relative;
+    width: 80%;
+    background-color: #ffa4bd;
+    border-radius: 25px;
+    box-shadow: 0 0 42px #9a9a9a;
+    top: 2vw;
+}
+
+.ueberschriften{
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #490032;
+}
+
+.selfie{
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 42px 2px #ffa4bd;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.fluffeluff{
+    position: absolute;
+    top: 70%;
+    right: -2%; 
+    width: clamp(40px, 5vw, 80px);
+    height: auto;
+}
+
+.links-custom {
+  background-image: url("../media/Custom_Links_Complete.png");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  height: clamp(270px,23vw,360px);
+  width: clamp(226px, 19vw, 300px);
+  top: 1vw;
+  position: relative;
+}
+
+.links-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column; 
+  margin: 0;
+  padding: 0;
+}
+
+.start{
+    position:absolute;
+
+    width:89%;
+    height:24%;
+
+    top:4%;
+    left:4%;
+
+    cursor:pointer;
+}
+
+.skills{
+    position:absolute;
+
+    width:89%;
+    height:24%;
+
+    top:37%;
+    left:4%;
+
+    cursor:pointer;
+}
+
+.hobbies{
+    position:absolute;
+
+    width:89%;
+    height:24%;
+
+    top:70%;
+    left:4%;
+
+    cursor:pointer;
+}
+
+.introText{
+    font-size: larger;
+    padding-left: 1%;
+    word-wrap: break-word;
+    padding-right: 10%;
+}
+
+#skills{
+    position: relative;
+}
+
+.skillsImage{
+    width: 100%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5vw;
+    position: relative;   
+}
+
+.butterfly1{
+    position: absolute;
+    top: 2%;
+    right: -2%; 
+    width: clamp(80px, 15vw, 200px);
+    height: auto;
+}

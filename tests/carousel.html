@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="carousel.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mein Carousel</h1>
+
+  <button id="prev">⬅️</button>
+
+  <div class="carousel" id="carousel">
+    Slide 1
+  </div>
+
+  <button id="next">➡️</button>
+
+  <script>
+    //const items = ["Slide 1", "Slide 2", "Slide 3"];
+    const items = [
+    {
+      title: "Card 1",
+      text: "Das ist eine Beschreibung",
+      image: "https://picsum.photos/id/1015/400/200",
+      link: "https://example.com"
+    },
+    {
+      title: "Card 2",
+      text: "Noch ein Text hier",
+      image: "https://picsum.photos/id/1016/400/200",
+      link: "https://example.com"
+    },
+    {
+      title: "Card 3",
+      text: "Mehr Content 😄",
+      image: "https://picsum.photos/id/1018/400/200",
+      link: "https://example.com"
+    }
+  ];
+    let index = 0;
+
+    const carousel = document.getElementById("carousel");
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
+
+    function updateSlide() {
+      //carousel.textContent = items[index];
+      //carousel.innerHTML = `<img src="${items[index]}" width="400">`;
+      const item = items[index];
+
+    carousel.innerHTML = `
+      <div class="card">
+        <img src="${item.image}" alt="${item.title}" />
+        <h2>${item.title}</h2>
+        <p>${item.text}</p>
+        <a href="${item.link}" target="_blank">Mehr erfahren</a>
+      </div>
+    `;
+    }
+
+    prevBtn.addEventListener("click", () => {
+      if (index === 0) {
+  index = items.length - 1;
+} else {
+  index = index - 1;
+}
+
+      updateSlide();
+    });
+
+    nextBtn.addEventListener("click", () => {
+      index = index === items.length - 1 ? 0 : index + 1;
+      updateSlide();
+    });
+    updateSlide();
+  </script>
+
+</body>
+</html>

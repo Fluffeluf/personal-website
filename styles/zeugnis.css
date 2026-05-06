@@ -1,0 +1,56 @@
+.outline{
+    text-align: center;
+    font-size: large;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    outline: #ffa4bd dotted;
+    margin-top: 5%;
+    border-radius: 25px;
+    position: relative;
+}
+
+.emailZeichen{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 60%;
+}
+
+.buttonDokumente{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url("../media/Button_Dokumente.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    position: relative;
+}
+
+.buttonDokumente a{
+    position: absolute;
+    outline: red dotted;
+    width:48%;
+    height:50%;
+
+    top:25%;
+    left:26%;
+
+    cursor:pointer;
+}
+
+.butterfly1{
+    position: absolute;
+    top: 5%;
+    right: -6%; 
+    width: clamp(45px, 12vw, 200px);
+    height: auto;
+}
+
+p{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}

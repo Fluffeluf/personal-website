@@ -1,0 +1,52 @@
+html, body{
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+*{
+    box-sizing: border-box;
+}
+/*
+body{
+    background-image: url("/ZZ_PersonalWebsite/media/Webseite_start_background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    image-rendering: pixelated;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}*/
+
+.screen{
+    position: relative;
+
+    width: 100vw;
+     max-width: 1920px;
+
+    background-image: url("/ZZ_PersonalWebsite/media/Webseite_start_background.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+
+    image-rendering: pixelated;
+}
+
+.button{
+    display: block;
+
+    width: 120vw;
+    height: 60vw;
+
+    background-image: url("/ZZ_PersonalWebsite/media/Webseite_start_Button.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+    cursor: pointer;
+}
